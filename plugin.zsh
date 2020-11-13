@@ -8,6 +8,3 @@ plugins=(
   zsh-completions
   z 
 )
-
-# zsh-completions
-autoload -U compinit && compinit
