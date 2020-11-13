@@ -2,9 +2,12 @@ ZSH_THEME="agnoster"
 
 plugins=(
   git 
+  docker docker-compose
   zsh-syntax-highlighting 
   zsh-autosuggestions 
-  z 
   zsh-completions
-  i
+  z 
 )
+
+# zsh-completions
+autoload -U compinit && compinit
