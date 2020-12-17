@@ -71,3 +71,8 @@ mvnplugingd() {
     local goal=${2:?goal id is required!}
     mvn help:describe -DartifactId=maven-"$plugin"-plugin -DgroupId=org.apache.maven.plugins -Dgoal="$goal" -Ddetail
 }
+
+# kerrySmart
+swagger() {
+    echo http://localhost:${1:-8080}/swagger-ui.html
+}

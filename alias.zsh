@@ -31,6 +31,8 @@ alias ipi='ipconfig getifaddr en0'
 alias k=kubectl
 alias kcd='kubectl config set-context $(kubectl config current-context) --namespace'
 alias local.parallel='ssh parallels@10.211.55.3'
+alias sshkg='ssh-keygen -t ed25519 -C "2442647554@qq.com"'
+alias gw='./gradlew'
 
 # docker
 alias sq.u='docker run -d --name sonarqube -e SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true -p 9000:9000 sonarqube:latest'
@@ -40,5 +42,8 @@ alias nexus.d='docker rm -f nexus'
 alias jenkins.u='docker run -d --name jenkins -u root -p 9090:8080 -p 50000:50000 -v $(which docker):/usr/bin/docker -e TZ="Asia/Shanghai" -v /etc/localtime:/etc/localtime:ro -v /var/run/docker.sock:/var/run/docker.sock -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts'
 alias jenkins.d='docker rm -f jenkins'
 alias dind.u='docker run --privileged --name my-docker -d docker:dind'
+alias dc='docker-compose'
 alias dm='docker-machine'
 alias dmc='docker-machine create -d virtualbox'
+
+alias maven.aliyun="echo \"maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }\" | pbcopy"
