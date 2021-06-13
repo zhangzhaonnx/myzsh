@@ -1,4 +1,15 @@
-#!/bin/sh
+#theme
+ZSH_THEME="agnoster"
+
+# plugins
+plugins=(
+  git 
+  docker docker-compose
+  zsh-syntax-highlighting 
+  zsh-autosuggestions 
+  zsh-completions
+  z 
+)
 
 # download oh my zsh plugins
 git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
