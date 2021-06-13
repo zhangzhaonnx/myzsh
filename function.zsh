@@ -32,14 +32,14 @@ gtb.acp() {
 	git push -u origin comments
 }
 
-acp() {
+gacp() {
     local message=${1:?commit message is required!}
     git add .
 	git commit -m "$message"
     git push
 }
 
-ac() {
+gac() {
     git add .
 	git commit -m "${1:-first commit}"
 }
@@ -72,7 +72,7 @@ mvnplugingd() {
     mvn help:describe -DartifactId=maven-"$plugin"-plugin -DgroupId=org.apache.maven.plugins -Dgoal="$goal" -Ddetail
 }
 
-# kerrySmart
-swagger() {
-    echo http://localhost:${1:-8080}/swagger-ui.html
+port() {
+    local p=${1:?port is required!}
+    lsof -i ":${p}"
 }

@@ -25,7 +25,7 @@ alias ping='ping -c 5'
 alias vi='vim'
 alias gl='glol'
 
-alias k9='kill-9'
+alias k9='kill -9'
 alias ipe='curl ipinfo.io/ip'
 alias ipi='ipconfig getifaddr en0'
 alias k=kubectl
@@ -33,6 +33,7 @@ alias kcd='kubectl config set-context $(kubectl config current-context) --namesp
 alias local.parallel='ssh parallels@10.211.55.3'
 alias sshkg='ssh-keygen -t ed25519 -C "2442647554@qq.com"'
 alias gw='./gradlew'
+alias jdks='/usr/libexec/java_home -V'
 
 # docker
 alias sq.u='docker run -d --name sonarqube -e SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true -p 9000:9000 sonarqube:latest'

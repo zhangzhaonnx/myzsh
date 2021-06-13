@@ -2,9 +2,9 @@
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 
-# mvn
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/zhaozhang/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/zhaozhang/Downloads/google-cloud-sdk/path.zsh.inc'; fi
@@ -22,3 +22,6 @@ eval "$(pyenv virtualenv-init -)"
 
 # mysql
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+
+# gopass
+source <(gopass completion bash)
