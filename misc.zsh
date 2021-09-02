@@ -1,6 +1,7 @@
 # jenv
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
+eval "$(jenv enable-plugin export)"
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
@@ -16,12 +17,12 @@ export ANDROID_SDK_ROOT="/usr/local/share/android-sdk"
 export PATH="${PATH}:${ANDROID_SDK_ROOT}/tools:${ANDROID_SDK_ROOT}/platform-tools"
 
 # pyenv
-export PATH="$HOME/.pyenv/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+# export PATH="$HOME/.pyenv/bin:$PATH"
+# eval "$(pyenv init -)"
+# eval "$(pyenv virtualenv-init -)"
 
 # mysql
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 
 # gopass
-source <(gopass completion bash)
+# source <(gopass completion bash)
